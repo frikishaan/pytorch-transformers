@@ -1,0 +1,16 @@
+{
+    "vocab_size": 10000,
+    "d_model": 512,
+    "n_heads": 8,
+    "n_layers": 6,
+    "d_ff": 2048,
+    "seq_len": 32,
+    "en_tokenizer_path": "models/en_bpe",
+    "hi_tokenizer_path": "models/hi_bpe",
+    "model_basename": "models/transformer",
+    "batch_size": 16,
+    "grad_acc_steps": 8,
+    "learning_rate": 1.0,
+    "warmup_steps": 1000,
+    "dropout": 0.1
+}

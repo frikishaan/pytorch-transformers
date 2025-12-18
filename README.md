@@ -24,7 +24,7 @@ If you want to train your own tokenizer, check out the `train_tokenizer.py` file
 
 I trained the model for **10 epochs/50k steps** (~5 hours) using free [Lightning AI](https://lightning.ai/) credits on a single T4 instance. Got a BLEU score of `0.07` — which is really poor for a real-world application but decent for learning purposes.
 
-I have also used [Mixed precision training](https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html) to speed up training and reduce memory usage. 
+I have also used [Automatic Mixed precision](https://docs.pytorch.org/tutorials/recipes/recipes/amp_recipe.html) to speed up training and reduce memory usage. 
 
 Below is the train loss graph:
 

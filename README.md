@@ -29,3 +29,5 @@ I have also used [Automatic Mixed precision](https://docs.pytorch.org/tutorials/
 Below is the train loss graph:
 
 ![train loss](./train_loss.png)
+
+Not sure why there is a spike in the loss later in the training. Let me know if you know the reason behind this by opening an issue, or maybe I just messed up training there.

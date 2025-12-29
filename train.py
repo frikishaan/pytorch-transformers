@@ -63,10 +63,10 @@ def get_tokenizer(config: Config) -> Tuple[SentencePieceProcessor, SentencePiece
 
 def get_ds(config: Config, src_sp: SentencePieceProcessor, tgt_sp: SentencePieceProcessor):
     
-    train_dataset = load_dataset("cfilt/iitb-english-hindi", split="train[:200]")
+    train_dataset = load_dataset("cfilt/iitb-english-hindi", split="train")
     train_dataset = train_dataset.map(add_token_ids, fn_kwargs={"config": config, "src_sp": src_sp, "tgt_sp": tgt_sp})
 
-    val_dataset = load_dataset("cfilt/iitb-english-hindi", split="validation[:200]")
+    val_dataset = load_dataset("cfilt/iitb-english-hindi", split="validation")
     val_dataset = val_dataset.map(add_token_ids, fn_kwargs={"config": config, "src_sp": src_sp, "tgt_sp": tgt_sp})
 
     # filter dataset
